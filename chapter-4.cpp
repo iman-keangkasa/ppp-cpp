@@ -74,4 +74,36 @@ int main()
 
 	//for-statement 2
 	for(int i=0;i<100;++i) print_square(i);
+	  vector<double> suhu;
+      double temp;
+  //csv   char comma;                 //for CSV data file: dumping the comma character
+      
+      //this method can also be use to read data files
+      while(cin>>temp)            //for leading space data file
+  //csv   while(cin>>temp>>comma)     //for CSV data file
+          suhu.push_back(temp);
+      
+      //finding the mean
+      double sum;
+      for(int i=0;i<suhu.size(); ++i) sum+=suhu[i];
+      cout<<"The temperature mean="<<sum/suhu.size()<<endl;
+      
+      //finding the median
+      sort(suhu.begin(),suhu.end()); //sorts the vector from beginning to the end
+      cout<<"The temperature median="<<suhu[suhu.size()/2]<<endl;
+      
+      //sorting and finding repeating words
+  //  vector <string> words;
+  //  string temp;
+ 
+     //the cin will terminate with Ctrl-D (Unix) or Ctrl-Z (Windows)
+ //  while(cin>>temp)
+ //      words.push_back(temp);
+ 
+ //  sort(words.begin(),words.end());
+     
+     //separate the input you wrote and the output
+ //  cout<<"\n"; 
+                                                                                                                                                       78,0-1        91%
+
 }
